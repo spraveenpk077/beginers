@@ -1,4 +1,4 @@
-n=int(input("Enter number:"))
+n=int(input("Enter num"))
 count=0
 while(n>0):
 count=count+1
