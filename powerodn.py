@@ -1,13 +1,8 @@
-def check_Power(N,k):
-    if N <= 0 or k <=0:
-        print "not a valid input"
-    else:
-        for i in range (1,20):
-            x = k**i
-            if x == N :
-                print " True "
-                print k, "power ", i , "is", N
-                break
-            elif x> N:
-                print "false"
-                break
+number = int(input(" Please Enter any Positive Integer : "))
+exponent = int(input(" Please Enter Exponent Value : "))
+power = 1
+
+for i in range(1, exponent + 1):
+    power = power * number
+    
+print("The Result of {0} Power {1} = {2}".format(number, exponent, power))              
